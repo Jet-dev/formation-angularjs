@@ -1,0 +1,31 @@
+<table class="table" id="sitesTable">
+    <thead>
+    <tr>
+        <th>{{ 'suppliers.codeSite' | translate }}</th>
+        <th>{{ 'suppliers.typeSite' | translate }}</th>
+        <th>{{ 'suppliers.dateCreation' | translate }}</th>
+        <th>{{ 'suppliers.dateMajEnr' | translate }}</th>
+        <th>{{ 'suppliers.adrLig1' | translate }}</th>
+        <th>{{ 'suppliers.codeVille' | translate }}</th>
+        <th>{{ 'suppliers.codePays' | translate }}</th>
+        <th class="action-column">{{ 'suppliers.action' | translate }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="site in slc.sites">
+        <td>{{site.codeSiteFrsId}}</td>
+        <td>{{site.typeFrsGestpf}}</td>
+        <td>{{site.dateCreation | date : 'dd/MM/yyyy'}}</td>
+        <td>{{site.dateMaj | date : 'dd/MM/yyyy'}}</td>
+        <td>{{site.adrLig1}}</td>
+        <td>{{site.codeVille}}</td>
+        <td>{{site.codePays}}</td>
+        <td ng-switch on="site.flagSiteFrsActif" class="action-column">
+            <a title="more info" ng-click="moreInfo(supplier, societe)"><span class="glyphicon glyphicon-info-sign"></span></a>
+            <a ng-switch-when="O" title="update" ng-click="update(supplier, societe)">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+<section id="suppliers">
+
+    <!--
+        Cette page complexe contient trois composants implémentés en directives avec chaqu'une son controlleur.
+        Ceci permet de séparer le code dans trois controlleurs au lieu d'un.
+    -->
+
+    <!-- component supplierSearch -->
+    <supplier-search></supplier-search>
+
+    <div class="content-wrapper row">
+        <h1>{{ 'suppliers.title1' | translate }}</h1>
+
+        <h3 class="lead">{{ 'suppliers.lead' | translate }}</h3>
+
+        <!-- messages will be added here -->
+        <div id="messages"></div>
+
+        <div align="center"><img src="images/loading.gif" alt="loader" ng-hide="sc.suppliers" class="loader"/></div>
+
+        <div class="presentation-content table-pres row" ng-show="sc.suppliers">
+            <h2>{{ 'suppliers.listOfSuppliers' | translate }}</h2>
+            <!-- component suppliersList -->
+            <suppliers-list suppliers="sc.suppliers"></suppliers-list>
+
+            <h2>{{ 'suppliers.listOfSites' | translate }}</h2>
+            <!-- component sitesList -->
+            <sites-list sites="sc.sites"></sites-list>
+        </div>
+        <!-- /.presentation-content -->
+    </div><!-- /.content-wrapper-->
+
+</section>

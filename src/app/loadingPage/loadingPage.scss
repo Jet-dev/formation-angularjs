@@ -1,0 +1,32 @@
+.loadingPage {
+
+    z-index: 10001;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: calc(100% - 23px);
+    text-align: center;
+
+    .loadingPage img {
+        padding-top: 50px;
+    }
+
+    .loadingPage .percents {
+        text-align: right;
+        margin-right: 5px;
+    }
+
+    .loadingPage .loadingBarContainer {
+        background-color: #f2dede;
+        height:5px;
+    }
+
+    .loadingPage .loadingBar {
+        background-color: red;
+        transition: width 0.2s;
+    }
+
+}
+
+

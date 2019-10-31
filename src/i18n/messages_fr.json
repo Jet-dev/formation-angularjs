@@ -1,0 +1,436 @@
+{
+    "header": {
+        "logoff" : "Déconnexion",
+        "langue" : "Langue"
+    },
+    "tabs" : {
+        "home": "Accueil",
+        "country" : "Pays",
+        "supplier" : "Fournisseur",
+        "miscellaneous" : {
+            "title" : "Miscellaneous",
+            "charts" : {
+                "title" : "Charts",
+                "google" : "Google Charts",
+                "highchart" : "Highcharts"
+            },
+            "other" : {
+                "title" : "Other",
+                "tree" : "Tree"
+            }
+        }
+    },
+    "countries" : {
+        "lead" : "Cette page permet aux utilisateurs de gérer les information des Pays.",
+        "codePays" : "Code du pays",
+        "libPays" : "Libellé du pays",
+        "codeDouane" : "Code douane",
+        "typePays" : "Type du pays",
+        "codeDevise" : "Code de la devise"
+    },
+    "suppliers" : {
+        "title1" : "Fournisseurs",
+        "lead" : "Cette page permet de mettre à jour les informations des fournisseurs.",
+        "codeFrs" : "Code frs Cpta",
+        "codeSite" : "Code site",
+        "nomFrs" : "Nom",
+        "cgaNonRenseigne" : "CGA non renseigné",
+        "rfaNonRenseigne" : "RFA non renseigné",
+        "typeFrs" : "Type Frs",
+        "typeSite" : "Type Site",
+        "adrLig1" : "Adresse",
+        "codeVille" : "Ville",
+        "codePays" : "Pays",
+        "search" : "Filtre",
+        "dateCreation" : "Créé le",
+        "dateMajEnr" : "Maj le",
+        "flagFrsActif" : "Actif",
+        "flagAgent" : "Agent (O/N)",
+        "libelle" : "Société Juridique",
+        "noVersionCga" : "Version CGA",
+        "dateCga" : "Date CGA",
+        "noVersionRfa" : "Version RFA",
+        "dateRfa" : "Date RFA",
+        "listOfSuppliers" : "Liste des fournisseurs",
+        "listOfSites" : "Liste des sites",
+        "oui" : "Oui",
+        "non" : "Non",
+        "updateTitle" : "Mise à jour d'un fournisseur",
+        "infoTitle" : "Consultation d'un fournisseur",
+        "sites" : "update Sites",
+        "save" : "Sauvegarder",
+        "close" : "Fermer",
+        "yes" : "Oui",
+        "no" : "Non",
+        "action" : "Actions",
+        "updateSites" : {
+            "infoSitesTitle" : "Mise à jour des sites",
+            "codeFrsCmpt" : "Code fournisseur comptable",
+            "nomCommercial" : "Nom commercial",
+            "codeFrsInfo" : "Code fournisseur info",
+            "codeSiteFrs" : "Code site fournisseur",
+            "raisonSocial" : "Raison sociale",
+            "codeOrigFab" : "Code Origine de fab.",
+            "adrLig1" : "Adresse 1",
+            "adrLig2" : "Adresse 2",
+            "codePostal" : "Code Postal",
+            "codeVille" : "Ville",
+            "pays" : "Code pays",
+            "noTel" : "No de téléphone",
+            "noFax" : "No de fax",
+            "typeFrsCmpt" : "Type fournisseur compta",
+            "typeFrsGestpf" : "Metier fournisseur (Site)",
+            "flagSiteAchat" : "Site Achat",
+            "flagSitePay" : "Site Paiement",
+            "dateCreation" : "Date création",
+            "dateMaj" :"Date mise à jour",
+            "flagSuiviPayImport" :"Flag suivi paiement import",
+            "flagSuiviTransportImport" :"Flag suivi transport import",
+            "previous" :"Site précédent",
+            "next" :"Site suivant",
+            "title" : {
+                "eneteFrs" : "Entête Fournisseur",
+                "siteFrs" : "Site Fournisseur",
+                "adrAdmin" : "Adresse Administrative",
+                "natSiteFrs" : "Nature Site Fournisseur",
+                "rensCompl" : "Renseignements complémentaires"
+            }
+        }
+    },
+    "dialog": {
+        "disable": "Désactivation",
+        "information": "Information",
+        "deletion": "Suppression",
+        "warning": "Attention"
+    },
+    "actions" : {
+        "print": "Imprimer",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "close": "Fermer",
+        "add": "Ajouter",
+        "delete": "Supprimer",
+        "disable": "Désactiver",
+        "ok": "OK",
+        "seeMore": "Voir plus",
+        "search": "Rechercher",
+        "validate": "Valider"
+    },
+    "common" : {
+        "errors": {
+            "length" : {
+                "max": "Longueur maximale",
+                "strict": "Longueur attendue"
+            }
+        }
+    },
+    "customerService": {
+        "generateRegister": {
+            "title": "Remboursements à effectuer par mandat cash",
+            "subtitle": "Générer un registre mandat cash",
+            "cols": {
+                "1": "Adresse client",
+                "2": "Nom client",
+                "3": "Montant à rembourser",
+                "4": "Code postal",
+                "5": "Commande",
+                "6": "Pays",
+                "7": "Message"
+            },
+            "total": "Total",
+            "totalSelected": "Total pour les commandes sélectionnées",
+            "submit": "Générer un registre"
+        },
+        "listRegisters": {
+            "title": "Liste des registres mandats cash",
+            "subtitle": "Envoyer registre mandats cash",
+            "import": "Importer un fichier de confirmation de la poste",
+            "cols": {
+                "1": "N° du registre",
+                "2": "Date",
+                "3": "Montant virement mandat cash",
+                "4": "Montant de la commission",
+                "5": "Justificatif virement client",
+                "6": "Justificatif virement commission",
+                "7": "",
+                "8": "",
+                "9": "Confirmation Poste"
+            },
+            "display": "Voir",
+            "sendMail": "Envoyer par mail",
+            "unableToSendMail": "Impossible d'envoyer le mail",
+            "unableToSendMailTooltip": "En attente de l'upload des fichiers justificatif.",
+            "uploadPostalFileSuccessfully": "Fichier importé avec succès.",
+            "mailSent": "Mail envoyé le",
+            "ok": "OK",
+            "waiting": "En attente",
+            "incomplete": "Non complet"
+        },
+        "modalRegister": {
+            "title": "Ordre de virement",
+            "date": "Date",
+            "user": "Utilisateur",
+            "cols": {
+                "1": "Adresse client",
+                "2": "Nom Complet",
+                "3": "Montant à rembourser",
+                "4": "code postal",
+                "5": "commande",
+                "6": "Pays",
+                "7": "Message",
+                "8": "Numéro Bureau Poste",
+                "9": "Numéro Mandat Cash",
+                "10": "Date Envoi Mandat Cash",
+                "11": "Numéro Ordre Virement"
+            },
+            "totalRepayment": "Total remboursement client",
+            "totalCommission": "Total commission",
+            "print": "Imprimer"
+        }
+    },
+    "merchandising": {
+        "codification": {
+            "architecture": "Arborescence",
+            "reorder": {
+                "title" : "Ordonner mes Niveaux",
+                "legend" : {
+                    "ok" : ": Est actif",
+                    "ko" : ": N'est pas actif"
+                }
+            },
+            "levels": {
+                "level": "Niveau",
+                "addElement": "Ajouter un élement",
+                "addSubElement": "Ajouter un sous-niveau à"
+            },
+            "modalAddLevel": {
+                "title": "Ajout d'un élément dans",
+                "levelLabel": "Libellé de l'élément"
+            },
+            "levelProperties": {
+                "title": "Paramétrage du Niveau",
+                "technicalLabel": "Libellé Technique",
+                "finalLevel": "Niveau Final",
+                "deleteLevel": "Supprimer ce Niveau",
+                "language": "Langue",
+                "label": "Libellé",
+                "parameter": "Paramètre",
+                "values": "Values",
+                "addParameter": "Ajouter un paramètre",
+                "site": "Site",
+                "website": "Site Web",
+                "start": "Début",
+                "end": "Fin",
+                "isActive": "Actif ?",
+                "show": "Affichable ?",
+                "disable": "La désactivation de ce site risque de ne plus afficher les références coloris suivants : <br>",
+                "deactiveatable": "Vous devez désactiver l’ensemble des sous-niveaux avant de pouvoir le désactiver",
+                "delete": "Attention si vous supprimez ce niveau les références coloris suivantes ne seront plus attachées et donc ne seront plus affichées sur le site :<br>",
+                "deletesure": "Êtes-vous sûre de vouloir supprimer le niveau de codification ?",
+                "attributes": {
+                    "parameter": "Paramètres",
+                    "values": "Valeurs",
+                    "add": "Ajouter un paramètre",
+                    "differentParram": "Paramètrage différent par site",
+                    "grid": {
+                        "site": "Site",
+                        "value": "Valeur"
+                    },
+                    "type": {
+                        "delete": "Voulez-vous supprimer le type d'attribut ?"
+                    }
+                },
+                "error": {
+                    "activechildren": "Le niveau de codification à supprimer a des sous niveaux actifs, ces derniers doivent être désactivés",
+                    "ideactivaeable": "Le niveau a des références coloris liés et/ou des règles de codification"
+                },
+                "modals": {
+                    "addAttribute" : {
+                        "title" : "Ajout/Mise à jour d'attribut",
+                        "type": "Type attribut :",
+                        "value": "Valeur attribut :"
+                    }
+                }
+            },
+            "levelCalculation": {
+                "title": "Calcul du Niveau",
+                "criteria": "Critère",
+                "description": "Description",
+                "preview": "Aperçu",
+                "number": "Nb RéfCo",
+                "update": "Modifier",
+                "delete": "Supprimer",
+                "addRule": "Ajouter un critère de calcul",
+                "deleteRuleConfirmation": "Êtes-vous sur de vouloir supprimer cette règle ?",
+                "addMissingReference": "Ajouter les références manquantes à ce niveau",
+                "removeAllLevelReferences": "Supprimer toutes les références de ce niveau",
+                "modals": {
+                    "addRule": {
+                        "title": "Critère de calcul",
+                        "productCodifications": "Codif Produits",
+                        "attributes": "Attributs",
+                        "attributeType": "Type attribut",
+                        "attributeValue": "Valeur attribut",
+                        "and": "ET"
+                    }
+                }
+            },
+            "preview": {
+                "filter": "Filtre Affichage",
+                "title": "Aperçu du niveau"
+            }
+        }
+    },
+    "catalogue": {
+        "referencing": {
+            "title": "Référence",
+            "saveAndSendRefToSites": "Sauvegarder et envoyer la référence aux sites",
+            "search": {
+                "refCodeOrPdm": "Code Réf ou PDM",
+                "salesCode": "CV"
+            },
+            "settings": {
+                "orion": "Orion",
+                "sites": "Sites",
+                "translations": "Translations",
+                "colors": "Colors",
+                "arguments": "Arguments",
+                "attributes": "Attributes",
+                "codification": "Codification"
+            },
+            "details": {
+                "properties": {
+                    "refCode": "Code Réf",
+                    "creation": "Création",
+                    "lastUpdate": "Dernière Modif",
+                    "triableRef": "Référence Triable",
+                    "normalSize": "Gabarit Normal"
+                },
+                "comments": {
+                    "user": "User",
+                    "date": "Date",
+                    "comment": "Commentaire",
+                    "add": "Ajouter un commentaire",
+                    "showMore": "Voir les commentaires plus anciens"
+                }
+            },
+            "colors": {
+                "title": "Coloris",
+                "translationTitle": "Traduction des coloris",
+                "no": "No",
+                "default": "Défaut",
+                "colorCode": "Code Coloris",
+                "collection": "Coll",
+                "commercialWording": "Libellé Commercial",
+                "colorFilter": "Colo Filtre",
+                "pantone": "Pantone",
+                "picture": "Photo",
+                "sample": "Prélèvement",
+                "europeanStock": "Stock Europe",
+                "rar": "RAR",
+                "russianStock": "Stock Russie",
+                "websiteActive": "Actif Site",
+                "shoot": "Envoyé en Shoot",
+                "PMA": "PMA",
+                "scenario": "Scénario",
+                "lock": "Blocage"
+            },
+            "arguments": {
+                "arguToRef": "à la référence",
+                "arguToRefCo": "à la RefCo",
+                "title": "Titre",
+                "foxyTicket": "Ticket Foxy",
+                "sitePageList": "Page List Site",
+                "argumentary": "Argumentaire",
+                "colorCode": "Code Coloris",
+                "switchToReferenceModeWarning": "Si vous effectuez cette action, l'argumentaire sera géré à la référence.<br />Êtes-vous sur de vouloir appliquer, pour chaque codification, l'argumentaire du coloris ##PARAM1## ?",
+                "translation": {
+                    "languageCode": "Code langue",
+                    "reTranslate": "Re-traduire",
+                    "reTranslateAllLanguages": "Re-traduire dans toutes les langues"
+                }
+            },
+            "attributes": {
+                "title": "Attributs",
+                "attributeToRef": "Attribut à la référence",
+                "attributeToRefCo": "Attribut à la RefCo",
+                "attributeType": "Type Attribut",
+                "attributeValue": "Valeur Attribut",
+                "displayProductPlug": "Affichage Fiche Produit",
+                "addReferenceAttribute": "Ajouter un attribut",
+                "addModal": {
+                    "color": "Coloris",
+                    "type": "Type attribut :",
+                    "value": "Valeur attribut :",
+                    "save": "Appliquer cet attribut au(x) coloris"
+                }
+            },
+            "codification": {
+                "title": "Codification",
+                "manualStorage": "Ranger Manuellement",
+                "codificationToRef": "à la référence",
+                "codificationToRefCo": "à la RefCo",
+                "color": "Coloris",
+                "tree": "Arborescence",
+                "codifications": "Codifications",
+                "principal": "Principale",
+                "delete": "Supprimer",
+                "switchToReferenceModeWarning": "Si vous effectuez cette action, la codification sera gérée à la référence.<br />Êtes-vous sur de vouloir appliquer, pour chaque codification, la codification du coloris ##PARAM1## ?",
+                "tidying": {
+                    "title": "Codification",
+                    "arborescence": "Arborescence :",
+                    "levelcodification": "Niveau ",
+                    "table": {
+                        "color": "Coloris"
+                    }
+                }
+            },
+            "orion": {
+                "title": "Orion"
+            },
+            "sites": {
+                "title": "Activité des références sur les sites",
+                "site": "Site",
+                "active": "Actif",
+                "startDate": "Date de début",
+                "endDate": "Date de fin",
+                "refCode": "Code Réf",
+                "reference": "Référence"
+            },
+            "stock": {
+                "button": "Stock",
+                "title": "Stock",
+                "warehouse": "Entrepot",
+                "colorCode": "Code coloris",
+                "sizeCode": "Code taille",
+                "cvpr": "CV PR",
+                "globalAvailability": "Dispo global",
+                "webReserved": "Réservé web",
+                "siteReserved": "Réservé site"
+            },
+            "international": {
+                "button": "International",
+                "title": "International",
+                "bekom": "Bekom",
+                "orion": "Orion",
+                "internationalCatalogue": "Catalogue international",
+                "siWeb": "Si Web",
+                "siStock": "Si Stock",
+                "colorCode": "Code coloris"
+            },
+            "sitesReport": {
+                "button": "Rapport des sites",
+                "title": "Rapport des sites",
+                "colorCode": "Code coloris",
+                "site": "Site",
+                "salable": "Vendable ?",
+                "translationStatus": "Etat traduction",
+                "activeOnSite": "Actif sur le site ?",
+                "reasonOfNonActivity": "Motif non actif site",
+                "informationDate": "Date info",
+                "firstMel": "Première MeL",
+                "lastMel": "Dernière MeL"
+            }
+        }
+    }
+}

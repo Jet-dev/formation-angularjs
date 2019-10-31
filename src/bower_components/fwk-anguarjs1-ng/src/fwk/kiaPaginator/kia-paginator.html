@@ -1,0 +1,14 @@
+<form class="form-inline">
+    <button ng-disabled="isFirstPage()" ng-click="firstPage()"
+            class="btn btn-default glyphicon glyphicon-fast-backward"/>
+    &nbsp;
+    <button ng-disabled="isFirstPage()" ng-click="decPage()" class="btn btn-default glyphicon glyphicon-backward"/>
+    &nbsp;
+    <span>{{ kiaPaginator.currentPage+1 }}/{{ numberOfPages() }}</span>&nbsp;
+    <button ng-disabled="isLastPage()" ng-click="incPage()" class="btn btn-default glyphicon glyphicon-forward"/>
+    &nbsp;
+    <button ng-disabled="isLastPage()" ng-click="lastPage()" class="btn btn-default glyphicon glyphicon-fast-forward"/>
+    &nbsp;
+    <span>{{ kiaPaginator.pageSizeLabel }}</span>&nbsp;
+    <select ng-model="kiaPaginator.pageSize" ng-options="size for size in pageSizeList" class="form-control"></select>
+</form>

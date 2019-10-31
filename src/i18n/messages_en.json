@@ -1,0 +1,436 @@
+{
+    "header": {
+        "logoff" : "[EN] Déconnexion",
+        "langue" : "[EN] Langue"
+    },
+    "tabs" : {
+        "home": "Home",
+        "country" : "Country",
+        "supplier" : "Supplier",
+        "miscellaneous" : {
+            "title" : "Miscellaneous",
+            "charts" : {
+                "title" : "Charts",
+                "google" : "Google Charts",
+                "highchart" : "Highcharts"
+            },
+            "other" : {
+                "title" : "Other",
+                "tree" : "Tree"
+            }
+        }
+    },
+    "countries" : {
+        "lead" : "This page allow to manage countries information.",
+        "codePays" : "Code",
+        "libPays" : "label",
+        "codeDouane" : "Code customs",
+        "typePays" : "Type",
+        "codeDevise" : "Code currency"
+    },
+    "suppliers" : {
+        "title1" : "Refint : Suppliers",
+        "lead" : "This page is intended to update suppliers.",
+        "codeFrs" : "Code",
+        "codeSite" : "Code site",
+        "nomFrs" : "Name",
+        "cgaNonRenseigne" : "CGA unfilled",
+        "rfaNonRenseigne" : "RFA unfilled",
+        "typeFrs" : "Type Frs",
+        "typeSite" : "Type Site",
+        "adrLig1" : "Address",
+        "codeVille" : "City",
+        "codePays" : "Country",
+        "search" : "Filter",
+        "dateCreation" : "Creation date",
+        "dateMajEnr" : "Update date",
+        "flagFrsActif" : "Active ?",
+        "flagAgent" : "Agent ?",
+        "libelle" : "Label",
+        "noVersionCga" : "Cga version",
+        "dateCga" : "Cga date",
+        "noVersionRfa" : "Rfa version",
+        "dateRfa" : "Rfa date",
+        "listOfSuppliers" : "Suppliers list",
+        "listOfSites" : "Sites list",
+        "oui" : "Yes",
+        "non" : "No",
+        "updateTitle" : "Update a Supplier",
+        "infoTitle" : "Supplier information",
+        "sites" : "Sites",
+        "save" : "Save changes",
+        "close" : "Close",
+        "yes" : "Yes",
+        "no" : "No",
+        "action" : "Actions",
+        "updateSites" : {
+            "infoSitesTitle" : "Update sites informations",
+            "codeFrsCmpt" : "Supplier Accounting Code",
+            "nomCommercial" : "Commercial Name",
+            "codeFrsInfo" : "IT Supplier Code",
+            "codeSiteFrs" : "Supplier Site Code",
+            "raisonSocial" : "Corporate Name",
+            "codeOrigFab" : "Manufacturing Country Code",
+            "adrLig1" : "Address 1",
+            "adrLig2" : "Address 2",
+            "codePostal" : "Postal Code",
+            "codeVille" : "City",
+            "pays" : "Country",
+            "noTel" : "Tel nbr",
+            "noFax" : "Fax nbr",
+            "typeFrsCmpt" : "Supplier Type",
+            "typeFrsGestpf" : "Supplier Job (Site)",
+            "flagSiteAchat" : "Buying Site",
+            "flagSitePay" : "Payment Site",
+            "dateCreation" : "Creation Date",
+            "dateMaj" :"Update Date",
+            "flagSuiviPayImport" :"Import Payment Follow Up ?",
+            "flagSuiviTransportImport" :"Import Transport Follow Up ?",
+            "previous" :"Previous Site",
+            "next" :"Next Site",
+            "title" : {
+                "eneteFrs" : "Main Supplier Informations",
+                "siteFrs" : "Supplier Site Informations",
+                "adrAdmin" : "Address",
+                "natSiteFrs" : "Supplier Site Nature",
+                "rensCompl" : "Additional Informations"
+            }
+        }
+    },
+    "dialog": {
+        "disable": "[EN] Désactivation",
+        "information": "[EN] Information",
+        "deletion": "[EN] Suppression",
+        "warning": "Warning"
+    },
+    "actions" : {
+        "print": "[EN] Imprimer",
+        "save": "[EN] Enregistrer",
+        "cancel": "[EN] Annuler",
+        "close": "[EN] Fermer",
+        "add": "[EN] Ajouter",
+        "delete": "[EN] Supprimer",
+        "disable": "Disable",
+        "ok": "OK",
+        "seeMore": "[EN] Voir plus",
+        "search": "[EN] Rechercher",
+        "validate": "[EN] Valider"
+    },
+    "common" : {
+        "errors": {
+            "length" : {
+                "max": "[EN] Longueur maximale",
+                "strict": "[EN] Longueur attendue"
+            }
+        }
+    },
+    "customerService": {
+        "generateRegister": {
+            "title": "[EN] Remboursements à effectuer par mandat cash",
+            "subtitle": "[EN] Générer un registre mandat cash",
+            "cols": {
+                "1": "[EN] Adresse client",
+                "2": "[EN] Nom client",
+                "3": "[EN] Montant à rembourser",
+                "4": "[EN] Code postal",
+                "5": "[EN] Commande",
+                "6": "[EN] Pays",
+                "7": "[EN] Message"
+            },
+            "total": "[EN] Total",
+            "totalSelected": "[EN] Total pour les commandes sélectionnées",
+            "submit": "[EN] Générer un registre"
+        },
+        "listRegisters": {
+            "title": "[EN] Liste des registres mandats cash",
+            "subtitle": "[EN] Envoyer registre mandats cash",
+            "import": "[EN] Importer un fichier de confirmation de la poste",
+            "cols": {
+                "1": "[EN] N° du registre",
+                "2": "[EN] Date",
+                "3": "[EN] Montant virement mandat cash",
+                "4": "[EN] Montant de la commission",
+                "5": "[EN] Justificatif virement client",
+                "6": "[EN] Justificatif virement commission",
+                "7": "",
+                "8": "",
+                "9": "[EN] Confirmation Poste"
+            },
+            "display": "[EN] Voir",
+            "sendMail": "[EN] Envoyer par mail",
+            "unableToSendMail": "[EN] Impossible d'envoyer le mail",
+            "unableToSendMailTooltip": "[EN] En attente de l'upload des fichiers justificatif.",
+            "uploadPostalFileSuccessfully": "File uploaded successfully.",
+            "mailSent": "[EN] Mail envoyé le",
+            "ok": "OK",
+            "waiting": "[EN] En attente",
+            "incomplete": "[EN] Non complet"
+        },
+        "modalRegister": {
+            "title": "[EN] Ordre de virement",
+            "date": "[EN] Date",
+            "user": "[EN] Utilisateur",
+            "cols": {
+                "1": "[EN] Adresse client",
+                "2": "[EN] Nom Complet",
+                "3": "[EN] Montant à rembourser",
+                "4": "[EN] code postal",
+                "5": "[EN] commande",
+                "6": "[EN] Pays",
+                "7": "[EN] Message",
+                "8": "[EN] Numéro Bureau Poste",
+                "9": "[EN] Numéro Mandat Cash",
+                "10": "[EN] Date Envoi Mandat Cash",
+                "11": "[EN] Numéro Ordre Virement"
+            },
+            "totalRepayment": "[EN] Total remboursement client",
+            "totalCommission": "[EN] Total commission",
+            "print": "[EN] Imprimer"
+        }
+    },
+    "merchandising": {
+        "codification": {
+            "architecture": "[EN] Arborescence",
+            "reorder": {
+                "title" : "[EN] Ordonner mes Niveaux",
+                "legend" : {
+                    "ok" : "[EN] : Est actif",
+                    "ko" : "[EN] : N'est pas actif"
+                }
+            },
+            "levels": {
+                "level": "[EN] Niveau",
+                "addElement": "[EN] Ajouter un élement",
+                "addSubElement": "[EN] Ajouter un sous-niveau à"
+            },
+            "modalAddLevel": {
+                "title": "[EN] Ajout d'un élément dans",
+                "levelLabel": "[EN] Libellé de l'élément"
+            },
+            "levelProperties": {
+                "title": "[EN] Paramétrage du Niveau",
+                "technicalLabel": "[EN] Libellé Technique",
+                "finalLevel": "[EN] Niveau Final",
+                "deleteLevel": "[EN] Supprimer ce Niveau",
+                "language": "[EN] Langue",
+                "label": "[EN] Libellé",
+                "parameter": "[EN] Paramètre",
+                "values": "[EN] Values",
+                "addParameter": "[EN] Ajouter un paramètre",
+                "site": "[EN] Site",
+                "website": "[EN] Site Web",
+                "start": "[EN] Début",
+                "end": "[EN] Fin",
+                "isActive": "Active?",
+                "show": "viewable?",
+                "disable": "[EN] La désactivation de ce site risque de ne plus afficher les références coloris suivants : <br>",
+                "deactiveatable": "[EN] Vous devez désactiver l’ensemble des sous-niveaux avant de pouvoir le désactiver",
+                "delete": "[EN] Attention si vous supprimez ce niveau les références coloris suivantes ne seront plus attachées et donc ne seront plus affichées sur le site :<br>",
+                "deletesure": "[EN] Êtes-vous sûre de vouloir supprimer le niveau de codification ?",
+                "attributes": {
+                    "parameter": "[EN] Paramètres",
+                    "values": "[EN] Valeurs",
+                    "add": "[EN] Ajouter un paramètre",
+                    "differentParram": "[EN] Paramètrage différent par site",
+                    "grid": {
+                        "site": "[EN] Site",
+                        "value": "[EN] Valeur"
+                    },
+                    "type": {
+                        "delete": "[EN] Voulez-vous supprimer le type d'attribut ?"
+                    }
+                },
+                "error": {
+                    "activechildren": "[EN] Le niveau de codification à supprimer a des sous niveaux actifs, ces derniers doivent être désactivés",
+                    "ideactivaeable": "[EN] Le niveau a des références coloris liés et/ou des règles de codification"
+                },
+                "modals": {
+                    "addAttribute" : {
+                        "title" : "[EN] Ajout/Mise à jour d'attribut",
+                        "type": "[EN] Type attribut :",
+                        "value": "[EN] Valeur attribut :"
+                    }
+                }
+            },
+            "levelCalculation": {
+                "title": "[EN] Calcul du Niveau",
+                "criteria": "[EN] Critère",
+                "description": "[EN] Description",
+                "preview": "[EN] Aperçu",
+                "number": "[EN] Nb RéfCo",
+                "update": "[EN] Modifier",
+                "delete": "[EN] Supprimer",
+                "addRule": "[EN] Ajouter un critère de calcul",
+                "deleteRuleConfirmation": "[EN] Êtes-vous sur de vouloir supprimer cette règle ?",
+                "addMissingReference": "[EN] Ajouter les références manquantes à ce niveau",
+                "removeAllLevelReferences": "[EN] Supprimer toutes les références de ce niveau",
+                "modals": {
+                    "addRule": {
+                        "title": "[EN] Critère de calcul",
+                        "productCodifications": "[EN] Codif Produits",
+                        "attributes": "[EN] Attributs",
+                        "attributeType": "[EN] Type attribut",
+                        "attributeValue": "[EN] Valeur attribut",
+                        "and": "AND"
+                    }
+                }
+            },
+            "preview": {
+                "filter": "[EN] Filtre Affichage",
+                "title": "[EN] Aperçu du niveau"
+            }
+        }
+    },
+    "catalogue": {
+        "referencing": {
+            "title": "[EN] Référence",
+            "saveAndSendRefToSites": "[EN] Sauvegarder et envoyer la référence aux sites",
+            "search": {
+                "refCodeOrPdm": "[EN] Code Réf ou PDM",
+                "salesCode": "[EN] CV"
+            },
+            "settings": {
+                "orion": "[EN] Orion",
+                "sites": "[EN] Sites",
+                "translations": "[EN] Translations",
+                "colors": "[EN] Colors",
+                "arguments": "[EN] Arguments",
+                "attributes": "[EN] Attributes",
+                "codification": "[EN] Codification"
+            },
+            "details": {
+                "properties": {
+                    "refCode": "[EN] Code Réf",
+                    "creation": "[EN] Création",
+                    "lastUpdate": "[EN] Dernière Modif",
+                    "triableRef": "[EN] Référence Triable",
+                    "normalSize": "[EN] Gabarit Normal"
+                },
+                "comments": {
+                    "user": "User",
+                    "date": "Date",
+                    "comment": "Comment",
+                    "add": "Add comment",
+                    "showMore": "[EN] Voir les commentaires plus anciens"
+                }
+            },
+            "colors": {
+                "title": "[EN] Coloris",
+                "translationTitle": "[EN] Traduction des coloris",
+                "no": "[EN] No",
+                "default": "[EN] Défaut",
+                "colorCode": "[EN] Code Coloris",
+                "collection": "[EN] Coll",
+                "commercialWording": "[EN] Libellé Commercial",
+                "colorFilter": "[EN] Colo Filtre",
+                "pantone": "[EN] Pantone",
+                "picture": "[EN] Photo",
+                "sample": "[EN] Prélèvement",
+                "europeanStock": "[EN] Stock Europe",
+                "rar": "[EN] RAR",
+                "russianStock": "[EN] Stock Russie",
+                "websiteActive": "[EN] Actif Site",
+                "shoot": "[EN] Envoyé en Shoot",
+                "PMA": "[EN] PMA",
+                "scenario": "[EN] Scénario",
+                "lock": "[EN] Blocage"
+            },
+            "arguments": {
+                "arguToRef": "[EN] à la référence",
+                "arguToRefCo": "[EN] à la RefCo",
+                "title": "[EN] Titre",
+                "foxyTicket": "[EN] Ticket Foxy",
+                "sitePageList": "[EN] Page List Site",
+                "argumentary": "[EN] Argumentaire",
+                "colorCode": "[EN] Code Coloris",
+                "switchToReferenceModeWarning": "[EN] Si vous effectuez cette action, l'argumentaire sera géré à la référence.<br />Êtes-vous sur de vouloir appliquer, pour chaque codification, l'argumentaire du coloris ##PARAM1## ?",
+                "translation": {
+                    "languageCode": "[EN] Code langue",
+                    "reTranslate": "[EN] Re-traduire",
+                    "reTranslateAllLanguages": "[EN] Re-traduire dans toutes les langues"
+                }
+            },
+            "attributes": {
+                "title": "[EN] Attributs",
+                "attributeToRef": "[EN] Attribut à la référence",
+                "attributeToRefCo": "[EN] Attribut à la RefCo",
+                "attributeType": "[EN] Type Attribut",
+                "attributeValue": "[EN] Valeur Attribut",
+                "displayProductPlug": "[EN] Affichage Fiche Produit",
+                "addReferenceAttribute": "[EN] Ajouter un attribut",
+                "addModal": {
+                    "color": "[EN] Coloris",
+                    "type": "[EN] Type attribut :",
+                    "value": "[EN] Valeur attribut :",
+                    "save": "[EN] Appliquer cet attribut au(x) coloris"
+                }
+            },
+            "codification": {
+                "title": "[EN] Codification",
+                "manualStorage": "[EN] Ranger Manuellement",
+                "codificationToRef": "[EN] à la référence",
+                "codificationToRefCo": "[EN] à la RefCo",
+                "color": "[EN] Coloris",
+                "tree": "[EN] Arborescence",
+                "codifications": "[EN] Codifications",
+                "principal": "[EN] Principale",
+                "delete": "[EN] Supprimer",
+                "switchToReferenceModeWarning": "[EN] Si vous effectuez cette action, la codification sera gérée à la référence.<br />Êtes-vous sur de vouloir appliquer, pour chaque codification, la codification du coloris ##PARAM1## ?",
+                "tidying": {
+                    "title": "[EN] Codification",
+                    "arborescence": "[EN] Arborescence :",
+                    "levelcodification": "[EN] Niveau ",
+                    "table": {
+                        "color": "[EN] Coloris"
+                    }
+                }
+            },
+            "orion": {
+                "title": "[EN] Orion"
+            },
+            "sites": {
+                "title": "[EN] Activité des références sur les sites",
+                "site": "[EN] Site",
+                "active": "[EN] Actif",
+                "startDate": "[EN] Date de début",
+                "endDate": "[EN] Date de fin",
+                "refCode": "[EN] Code Réf",
+                "reference": "[EN] Référence"
+            },
+            "stock": {
+                "button": "[EN] Stock",
+                "title": "[EN] Stock",
+                "warehouse": "[EN] Entrepot",
+                "colorCode": "[EN] Code coloris",
+                "sizeCode": "[EN] Code taille",
+                "cvpr": "[EN] CV PR",
+                "globalAvailability": "[EN] Dispo global",
+                "webReserved": "[EN] Réservé web",
+                "siteReserved": "[EN] Réservé site"
+            },
+            "international": {
+                "button": "[EN] International",
+                "title": "[EN] International",
+                "bekom": "[EN] Bekom",
+                "orion": "[EN] Orion",
+                "internationalCatalogue": "[EN] Catalogue international",
+                "siWeb": "[EN] Si Web",
+                "siStock": "[EN] Si Stock",
+                "colorCode": "[EN] Code coloris"
+            },
+            "sitesReport": {
+                "button": "[EN] Rapport des sites",
+                "title": "[EN] Rapport des sites",
+                "colorCode": "[EN] Code coloris",
+                "site": "[EN] Site",
+                "salable": "[EN] Vendable ?",
+                "translationStatus": "[EN] Etat traduction",
+                "activeOnSite": "[EN] Actif sur le site ?",
+                "reasonOfNonActivity": "[EN] Motif non actif site",
+                "informationDate": "[EN] Date info",
+                "firstMel": "[EN] Première MeL",
+                "lastMel": "[EN] Dernière MeL"
+            }
+        }
+    }
+}

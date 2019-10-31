@@ -1,0 +1,23 @@
+<div class="content-wrapper row">
+    <h1>Refint : Tree</h1>
+
+    <div class="center-block">
+        <div class="row">
+            <div class="col-lg-6">
+                <div id="tree"></div>
+                <!-- /#tree -->
+            </div>
+            <div class="col-lg-6" ng-show="tc.currentSupplier">
+                <h3>Selected supplier : </h3>
+                Nom : {{tc.currentSupplier.nomFrs}}
+                Code : {{tc.currentSupplier.codeFrs}}<br/>
+                Type : {{tc.currentSupplier.typeFrsCpta}}<br/>
+                Flag actif : {{tc.currentSupplier.flagFrsActif}}<br/>
+                Date creation : {{tc.currentSupplier.dateCreation | date : 'dd/MM/appliblanchejsy'}}<br/>
+                Date MAJ : {{tc.currentSupplier.dateMaj | date : 'dd/MM/appliblanchejsy'}}<br/>
+                No Siret : {{tc.currentSupplier.noSiret}}<br/>
+                Date Desactivation : {{tc.currentSupplier.dateDesact | date : 'dd/MM/appliblanchejsy'}}<br/>
+            </div>
+        </div>
+    </div>
+</div><!-- ./content-wrapper -->

@@ -1,0 +1,37 @@
+{
+  "name": "fwk-angularjs1-ng",
+  "version": "1.0.8",
+  "private": true,
+  "main": [
+    "src/fwk/kiabi.js",
+    "src/fwk/mixins.js",
+    "src/fwk/auth/kiabiOAuthAuthentication.service.js",
+    "src/fwk/kiaAuthorize/kiaAuthorize.directive.js",
+    "src/fwk/kiaDateParser/kiaDateParser.directive.js",
+    "src/fwk/kiaPaginator/kiaPaginator.directive.js",
+    "src/fwk/kiaSorter/kiaSorter.directive.js"
+  ],
+  "ignore": [
+    "src/bower_components"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4",
+    "angular": "1.5.5",
+    "angular-route": "1.5.5",
+    "angular-resource": "1.5.5",
+    "angular-translate": "2.11.0",
+    "angular-translate-loader-static-files": "2.11.0",
+    "underscore": "1.8.3",
+    "moment": "2.8.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.5.5"
+  },
+  "_cacheHeaders": {
+    "Content-Type": "application/zip",
+    "Content-Disposition": "attachment; filename=\"fwk-angularjs1-ng-1.0.8-6acb914f8c0b917673fef337aa60d93b35651d73.zip\""
+  },
+  "_source": "http://xgit01.kiabi.fr/fwk/fwk-angularjs1-ng/repository/archive.zip?ref=1.0.8",
+  "_target": "*",
+  "_originalSource": "http://xgit01.kiabi.fr/fwk/fwk-angularjs1-ng/repository/archive.zip?ref=1.0.8"
+}

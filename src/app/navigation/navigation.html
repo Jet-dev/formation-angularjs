@@ -1,0 +1,55 @@
+<header id="header" class="navbar navbar-default">
+    <div class="container-fluid">
+
+        <div class="navbar-brand logo">
+            <a href="#/">
+                <span>Blank</span>
+            </a>
+        </div>
+
+        <nav class="btn-group navigation">
+            <a href="#/" class="btn btn-default" kia-authorize ng-class="{ 'active': nc.currentPath === '/' }"><span>{{ 'tabs.home' | translate }}</span></a>
+
+            <a href="#/countries" class="btn btn-default nav-item" ng-class="{ 'active': nc.currentPath == '/countries' }" kia-authorize="ROLE_USER"><span>{{ 'tabs.country' | translate }}</span></a>
+            <a href="#/suppliers" class="btn btn-default nav-item" ng-class="{ 'active': nc.currentPath == '/suppliers' }"
+               kia-authorize="ROLE_ADMIN, ROLE_USER"><span>{{ 'tabs.supplier' | translate }}</span></a>
+
+            <div class="btn-group" kia-authorize="ROLE_USER">
+                <button type="button" class="btn btn-default dropdown-toggle" ng-class="{ 'active': nc.currentPath.search('/misc/') >= 0 }" data-toggle="dropdown">
+                    <span><i>{{'tabs.miscellaneous.title' | translate}}</i></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header">{{'tabs.miscellaneous.charts.title' | translate}}</li>
+                    <li><a href="#/misc/googlechart" class=" nav-item" kia-authorize="ROLE_USER">{{'tabs.miscellaneous.charts.google' | translate}}</a></li>
+                    <li><a href="#/misc/highchart" class="nav-item" kia-authorize="ROLE_USER">{{'tabs.miscellaneous.charts.highchart' | translate}}</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">{{'tabs.miscellaneous.other.title' | translate}}</li>
+                    <li><a href="#/misc/tree" class="nav-item" kia-authorize="ROLE_USER">{{'tabs.miscellaneous.other.tree' | translate}}</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="collapse navbar-collapse">
+            <div class="nav navbar-nav navbar-right navbar-language">
+                <div class="btn-group lang-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span>{{ 'header.langue' | translate }}</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="" ng-click="nc.toggleLanguage('fr_FR')">Français<span class="glyphicon language-icon" ng-class="{ 'glyphicon-ok' : nc.lang == 'fr' }"></span></a></li>
+                        <li><a href="" ng-click="nc.toggleLanguage('en_GB')">English<span class="glyphicon language-icon" ng-class="{ 'glyphicon-ok' : nc.lang == 'en' }"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav navbar-nav navbar-right navbar-user" kia-authorize>
+                <span>{{nc.user.displayName}}</span>
+
+                <p>Utilisateur</p>
+            </div>
+            <div class="nav navbar-nav navbar-right navbar-logout" kia-authorize>
+                <a href="#/logout"><span class="visible-lg-inline">{{ 'header.logoff' | translate }}</span></a>
+            </div>
+        </div>
+
+    </div>
+</header>

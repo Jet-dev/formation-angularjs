@@ -1,0 +1,29 @@
+#header {
+
+    .navbar-language {
+        width: 90px;
+        margin-top: 31px;
+    }
+
+    #header .navbar-nav.navbar-language ul li a {
+        color: #090a36;
+    }
+
+    #header .navbar-nav.navbar-language ul li a:hover {
+        color: white;
+    }
+
+    #header .lang-btn {
+        width: 80px;
+    }
+
+    #header .logo {
+        background-size: 95px 40px;
+        background-position: 30px 8px;
+    }
+
+    .navigation .nav-item {
+        display: none;
+    }
+
+}

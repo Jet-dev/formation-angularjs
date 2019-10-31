@@ -1,0 +1,34 @@
+<div class="filters row">
+    <form class="form-inline filters-form supplier-filters" ng-submit="ssc.searchSuppliers()">
+        <div class="col-md-9">
+            <div class="form-group">
+                <label>{{ 'suppliers.codeFrs' | translate }}
+                    <input type="text" class="form-control" name="codeFrs"
+                           ng-model="ssc.searchCodeFrs" ng-minlength=2 ng-maxlength=20>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>{{ 'suppliers.nomFrs' | translate }}
+                    <input type="text" class="form-control" name="nomFrs"
+                           ng-model="ssc.searchNomFrs" ng-minlength=0 ng-maxlength=20>
+                </label>
+            </div>
+            <div class="form-group form-checkbox">
+                <label for="CGAnr">{{ 'suppliers.cgaNonRenseigne' | translate }}</label>
+                <input type="checkbox" name="CGAnr" id="CGAnr" ng-model="ssc.searchCgaDefined">
+            </div>
+            <div class="form-group form-checkbox">
+                <label for="RFAnr">{{ 'suppliers.rfaNonRenseigne' | translate }}</label>
+                <input type="checkbox" name="RFAnr" id="RFAnr" ng-model="ssc.searchFraDefined">
+            </div>
+            <div class="form-group">
+                <select class="form-control" ng-model="ssc.selectedType">
+                    <option ng-repeat="typeFrs in ssc.typeFrs" value="{{ typeFrs }}">{{ typeFrs }}</option>
+                </select>
+            </div>
+        </div>
+        <div class="buttons col-md-3">
+            <button type="submit" class="btn btn-primary">{{ 'suppliers.search' | translate }}</button>
+        </div>
+    </form>
+</div>

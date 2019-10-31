@@ -1,0 +1,19 @@
+{
+            "iss":"kiabi-oauth2",
+            "aud":"NOM_APPLI",
+            "exp":EXP_DO_NOT_REMOVE,
+            "jti":"X4JY_UEGFn2K6FQYJPheAA",
+            "iat":EXP_DO_NOT_REMOVE,
+            "sub":"341085",
+            "user":{
+                "firstName":"LOIC",
+                "lastName":"MATHIEU",
+                "displayName":"MR LOIC MATHIEU",
+                "email":"l.mathieu@kiabi.com",
+                "login":"lmathieu",
+                "establishementCode":"CEN"
+                ,"country":"FR"
+                ,"languageCode":"FRA"
+            },
+            "authorities":["ROLE_USER"]
+}

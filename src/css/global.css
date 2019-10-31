@@ -1,0 +1,43 @@
+/*
+* global.css : define kiabi skin
+* WARNING : please don't change this file but put your custom class in app folder instead.
+
+* @author lmathieu
+*/
+[kia-sorter-property] {
+	cursor: pointer;
+}
+
+[kia-sorter-property]:hover {
+	text-decoration: underline;
+}
+
+[kia-sorter-property] .glyphicon {
+	padding-left: 5px;
+}
+
+.language-icon {
+	padding-left: 5px;
+}
+
+img.loader{
+    border : none;
+}
+
+h3.lead{
+   font-size: 16px;
+   font-style: italic;
+}
+
+.table .actions {
+    min-width: 75px;
+}
+
+.message-detail {
+    cursor: pointer;
+}
+
+/* fancy tree adaptation */
+ul.fancytree-container li:before {
+    content: none;
+}

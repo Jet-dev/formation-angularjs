@@ -1,0 +1,54 @@
+{
+  "name": "application-blanche-angularjs-ng",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+      "fwk-anguarjs1-ng" : "http://xgit01.kiabi.fr/fwk/fwk-angularjs1-ng/repository/archive.zip?ref=1.0.8",
+      "jquery-ui": "1.11.4",
+      "bootstrap": "3.3.5",
+      "angular-bootstrap": "0.14.3",
+      "angular-ui-date": "09283b0456e3f2b3fbac42afeba650468d9dbfd6",
+      "highcharts-release": "3.0.10",
+      "fancytree": "2.2.0",
+      "angular-google-chart": "0.1.0",
+      "angular-material": "1.0.9"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.5.5"
+  },
+    "overrides": {
+        "angular": {
+            "dependencies": {
+                "jquery": "2.1.4"
+            },
+            "main": [
+                "./angular.js",
+                "./angular-csp.css"
+            ]
+        },
+        "bootstrap": {
+            "main": [
+                "dist/css/bootstrap.min.css",
+                "dist/js/bootstrap.js"
+            ]
+        },
+        "font-awesome": {
+            "main": [
+                "css/font-awesome.min.css"
+            ]
+        },
+        "jquery-ui": {
+            "main": [
+                "themes/smoothness/jquery-ui.css",
+                "jquery-ui.js"
+            ]
+        },
+        "fancytree": {
+            "main": [
+                "dist/skin-lion/ui.fancytree.min.css",
+                "dist/jquery.fancytree-custom.min.js",
+                "dist/skin-lion/icons.gif"
+            ]
+        }
+    }
+}

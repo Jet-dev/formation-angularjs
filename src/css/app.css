@@ -1,0 +1,44 @@
+.full-size-modal .modal-dialog {
+    width: 95%;
+}
+
+.ui-grid .too-long-cell, .ui-grid .error-cell {
+    color: #a94442;
+    background-color: #f2dede;
+}
+
+.ui-grid .success-cell {
+    color: #3c763d;
+    background-color: #dff0d8;
+}
+
+.ui-grid .warning-cell {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+}
+
+.ui-grid .amount-cell {
+    text-align: right;
+}
+
+.clickable {
+    cursor: pointer;}
+
+/* Supprime le halo bleu autour des icons lors du click */
+.material-icons {
+    outline: none;
+}
+/** ui-select */
+.ui-select-choices-row:hover {
+    color: #333333;
+}
+
+/** bootstrap fix for ui-grid */
+body {
+    line-height: inherit;
+}
+
+/** material checkbox */
+md-checkbox {
+    margin-bottom: inherit;
+}

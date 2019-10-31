@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "angular"
+  ],
+  "globals": {
+    "_": false,
+    "angular": false
+  },
+  "rules": {
+    "eqeqeq": 0,
+    "no-use-before-define": 0,
+    "no-multi-spaces": 0,
+    "camelcase": 1,
+    "no-bitwise": 1,
+    "curly": 1,
+    "no-caller": 2,
+    "quotes": [1, "single"],
+    "strict": [2, "function"],
+    "no-debugger": 2,
+
+    // AngularJS Rules
+    // See : https://www.npmjs.com/package/eslint-plugin-angular#rules
+    "angular/controller-as-route": 0,
+    "angular/on-watch": 0,
+    "angular/controller-as": 0,
+    "angular/definedundefined": 0,
+    "angular/empty-controller": 1
+  }
+}

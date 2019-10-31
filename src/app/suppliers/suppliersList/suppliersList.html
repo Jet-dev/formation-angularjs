@@ -1,0 +1,42 @@
+<table class="table" id="suppliersTable">
+    <thead>
+    <tr kia-sorter kia-sorter-data="sulc.suppliers" kia-sorter-default="fournisseur.codeFrs">
+        <th kia-sorter-property="fournisseur.codeFrs" class="sort">{{ 'suppliers.codeFrs' | translate }}</th>
+        <th kia-sorter-property="fournisseur.nomFrs" class="sort">{{ 'suppliers.nomFrs' | translate }}</th>
+        <th>{{ 'suppliers.dateCreation' | translate }}</th>
+        <th>{{ 'suppliers.dateMajEnr' | translate }}</th>
+        <th>{{ 'suppliers.flagFrsActif' | translate }}</th>
+        <th>{{ 'suppliers.typeFrs' | translate }}</th>
+        <th class="withBorderRight">{{ 'suppliers.flagAgent' | translate }}</th>
+        <th class="action-column">{{ 'suppliers.action' | translate }}</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td colspan="9" align="right"><span kia-paginator kia-paginator-items="sulc.suppliers | filter:query | orderBy:kiaSorterProperty:kiaSorterReverse"></span>
+        </td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr  ng-repeat="supplier in pageItems() | orderBy:kiaSorterProperty:kiaSorterReverse">
+        <td>{{supplier.codeFrs}}</td>
+        <td>{{supplier.nomFrs}}</td>
+        <td>{{supplier.dateCreation | date : 'dd/MM/yyyy'}}</td>
+        <td>{{supplier.dateMaj | date : 'dd/MM/yyyy'}}</td>
+        <td ng-switch on="supplier.flagFrsActif">
+            <span ng-switch-when="O">{{ 'suppliers.oui' | translate }}</span>
+            <span ng-switch-when="N">{{ 'suppliers.non' | translate }}</span>
+        </td>
+        <td>{{supplier.typeFrsCpta}}</td>
+        <td class="withBorderRight" ng-switch on="supplier.flagAgent">
+            <span ng-switch-when="O">{{ 'suppliers.oui' | translate }}</span>
+            <span ng-switch-when="N">{{ 'suppliers.non' | translate }}</span>
+        </td>
+        <td class="action-column">
+            <a title="{{ 'suppliers.sites' | translate }}" ng-click="openSupplierSitesModal(supplier)">
+                <span class="glyphicon glyphicon-briefcase"></span>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,6 @@
+{
+    "directory": "src/bower_components",
+    "proxy":"http://gateway.zscaler.net:80",
+    "https-proxy":"http://gateway.zscaler.net:80",
+    "no-proxy":"xgit01.kiabi.fr"
+}

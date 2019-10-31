@@ -1,0 +1,50 @@
+<div id="countries" class="content-wrapper row">
+    <h1>Refint : Countries</h1>
+
+    <h3 class="lead">{{ 'countries.lead' | translate }}</h3>
+
+    <!-- messages will be added here -->
+    <div id="messages"></div>
+
+    <div align="center" ng-hide="cc.countries"><img src="images/loading.gif" alt="loader" class="loader"/></div>
+
+    <div class="presentation-content table-pres row" ng-show="cc.countries">
+        <h2>List of countries&nbsp;<a title="create" ng-click="cc.createCountry()"><span class="glyphicon glyphicon-plus"></span></a></h2>
+
+        <div class="filters">
+            <form class="form-inline col-md-7 filters-form">
+                <div class="form-group">
+                    <label>Filter :
+                        <input type="text" class="form-control" placeholder="Filter" ng-model="query" id="query">
+                    </label>
+                </div>
+            </form>
+        </div>
+        <table class="table" kia-sorter kia-sorter-data="countries" kia-sorter-default="code">
+            <thead>
+            <tr>
+                <th kia-sorter-property="code" class="sort">{{ 'countries.codePays' | translate }}</th>
+                <th kia-sorter-property="label" class="sort">{{ 'countries.libPays' | translate }}</th>
+                <th kia-sorter-property="custom" class="sort">{{ 'countries.codeDouane' | translate }}</th>
+                <th kia-sorter-property="type" class="sort">{{ 'countries.typePays' | translate }}</th>
+                <th kia-sorter-property="currency" class="sort">{{ 'countries.codeDevise' | translate }}</th>
+                <th class="actions">actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="country in cc.countries | filter:query | orderBy:kiaSorterProperty:kiaSorterReverse">
+                <td>{{ country.code }}</td>
+                <td>{{ country.label }}</td>
+                <td>{{ country.custom }}</td>
+                <td>{{ country.type }}</td>
+                <td>{{ country.currency }}</td>
+                <td>
+                    <a title="update" ng-click="cc.updateCountry(country)"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a title="delete" ng-click="cc.removeCountry(country)"><span class="glyphicon glyphicon-remove"></span></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- /.presentation-content -->
+</div><!-- ./content-wrapper -->
