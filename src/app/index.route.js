@@ -10,12 +10,12 @@
       .when('/', {
         templateUrl: 'app/planes/planes.html',
         controller: 'PlanesController',
-        controllerAs: 'pc'
+        controllerAs: 'psc'
       })
       .when('/:id', {
         templateUrl: 'app/detail/detail.html',
         controller: 'DetailController',
-        controllerAs: 'dc'
+        controllerAs: 'pc'
       })
       .otherwise({
         redirectTo: '/'
