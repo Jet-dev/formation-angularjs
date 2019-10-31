@@ -6,13 +6,18 @@
       .controller('PlaneController', PlaneController);
 
     /** @ngInject */
-    function PlaneController() {
+    function PlaneController($location) {
       var vm = this;
 
-      vm.toto = 'toto';
+      vm.goToDetail = goToDetail;
+
       activate();
 
       function activate() {
+      }
+
+      function goToDetail() {
+        $location.path('/' + vm.jet.id);
       }
     }
   }

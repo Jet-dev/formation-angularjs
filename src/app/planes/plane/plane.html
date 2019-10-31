@@ -4,14 +4,14 @@
     class="md-card-image" alt="Washed Out">
   <md-card-title>
     <md-card-title-text>
-      <span class="md-headline">{{ pc.jet.title }}</span>
+      <span class="md-headline">{{ pc.jet.name }}</span>
     </md-card-title-text>
   </md-card-title>
   <md-card-content>
     <p>{{ pc.jet.description }}</p>
   </md-card-content>
   <md-card-actions layout="row" layout-align="end center">
-    <md-button>Action 1</md-button>
+    <md-button ng-click="pc.goToDetail()">Action 1</md-button>
     <md-button>Action 2</md-button>
   </md-card-actions>
 </md-card>

@@ -15,7 +15,12 @@
       .when('/:id', {
         templateUrl: 'app/detail/detail.html',
         controller: 'DetailController',
-        controllerAs: 'pc'
+        controllerAs: 'dc',
+        resolve: {
+          jet: function($route, jetsService) {
+            return jetsService.getJet($route.current.params.id);
+          }
+        }
       })
       .otherwise({
         redirectTo: '/'
