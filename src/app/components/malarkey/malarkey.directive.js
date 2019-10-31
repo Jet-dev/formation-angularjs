@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('test')
+    .module('formation-ng')
     .directive('acmeMalarkey', acmeMalarkey);
 
   /** @ngInject */

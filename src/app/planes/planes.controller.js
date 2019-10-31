@@ -2,11 +2,11 @@
   'use strict';
 
   angular
-    .module('test')
-    .controller('MainController', MainController);
+    .module('formation-ng')
+    .controller('PlanesController', PlanesController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function PlanesController($timeout, webDevTec, toastr) {
     var vm = this;
 
     vm.awesomeThings = [];

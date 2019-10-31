@@ -2,13 +2,12 @@
   'use strict';
 
   angular
-    .module('test')
-    .directive('acmeNavbar', acmeNavbar);
+    .module('formation-ng')
+    .component('acmeNavbar', acmeNavbar);
 
   /** @ngInject */
   function acmeNavbar() {
-    var directive = {
-      restrict: 'E',
+    var conponent = {
       templateUrl: 'app/components/navbar/navbar.html',
       scope: {
           creationDate: '='
@@ -18,7 +17,7 @@
       bindToController: true
     };
 
-    return directive;
+    return conponent;
 
     /** @ngInject */
     function NavbarController(moment) {
