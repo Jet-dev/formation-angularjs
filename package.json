@@ -3,7 +3,7 @@
   "version": "1.0.0-SNAPSHOT",
   "dependencies": {},
   "devDependencies": {
-        "bower": "1.4.1",
+        "bower": "1.8.8",
         "connect-livereload": "0.4.0",
         "del": "2.2.0",
     "eslint": "1.10.3",
