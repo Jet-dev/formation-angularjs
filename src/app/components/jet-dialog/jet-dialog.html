@@ -1,0 +1,69 @@
+<md-dialog aria-label="Update jet">
+  <form ng-cloak ng-submit="jdc.save()">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Modification</h2>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <div>
+          <md-input-container>
+            <label>Nom</label>
+            <input ng-model="jdc.jet.name">
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container class="md-block">
+            <label>Description</label>
+            <textarea ng-model="jdc.jet.description" md-maxlength="2000" rows="5" md-select-on-focus></textarea>
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container>
+            <label>Image</label>
+            <input type="url" ng-model="jdc.jet.pictureUrl">
+          </md-input-container>
+          <md-input-container>
+            <label>Constructeur</label>
+            <input ng-model="jdc.jet.maker">
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container>
+            <label>Longueur</label>
+            <input type="number" ng-model="jdc.jet.length">
+          </md-input-container>
+          <md-input-container>
+            <label>Largeur</label>
+            <input type="number" ng-model="jdc.jet.width">
+          </md-input-container>
+          <md-input-container>
+            <label>Hauteur</label>
+            <input type="number" ng-model="jdc.jet.height">
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container>
+            <label>Vitesse maximum</label>
+            <input type="number" ng-model="jdc.jet.maxSpeed">
+          </md-input-container>
+          <md-input-container>
+            <label>Année de lancement</label>
+            <input type="number" ng-model="jdc.jet.year">
+          </md-input-container>
+        </div>
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <md-button ng-click="jdc.answer('not useful')">
+        Annuler
+      </md-button>
+      <md-button type="submit">
+        Sauvegarder
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

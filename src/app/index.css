@@ -86,3 +86,29 @@ plane {
   float: right;
   width: 100px;
 }
+
+.detail-container {
+  display: flex;
+  padding: 48px;
+}
+
+.detail-container > div:first-child {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-container img {
+ max-width: 600px;
+}
+
+.detail-infos {
+  margin-left: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-infos .label {
+  font-weight: bold;
+}

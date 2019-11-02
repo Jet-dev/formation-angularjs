@@ -4,5 +4,16 @@
   </div>
   <div class="detail-infos">
     <h2>{{ dc.jet.name }}</h2>
+    <p>{{ dc.jet.description }}</p>
+    <div><span class="label">Constructeur:</span> {{ dc.jet.maker }}</div>
+    <div><span class="label">Longueur:</span> {{ dc.jet.length }} cm</div>
+    <div><span class="label">Largeur:</span> {{ dc.jet.width }} cm</div>
+    <div><span class="label">Hauteur:</span> {{ dc.jet.height }} cm</div>
+    <div><span class="label">Vitesse maximum</span>: {{ dc.jet.maxSpeed }} km/h</div>
+    <div><span class="label">Année de lancement</span>: {{ dc.jet.year }}</div>
   </div>
+</div>
+<div class="detail-action">
+  <md-button ng-click="dc.openDialog($event)">Modifier</md-button>
+  <md-button>Supprimer</md-button>
 </div>
