@@ -6,10 +6,11 @@
       .controller('DetailController', DetailController);
 
     /** @ngInject */
-    function DetailController(jet, $mdDialog, $document, jetsService) {
+    function DetailController(jet, $mdDialog, $document, jetsService, $location) {
       var vm = this;
 
       vm.openDialog = openDialog;
+      vm.deleteJet = deleteJet;
 
       vm.jet = jet.data;
 
@@ -36,6 +37,22 @@
             })}, function () {
           });
       }
+
+      function deleteJet (ev) {
+        var confirm = $mdDialog.confirm()
+          .title('Suppression')
+          .textContent('Etes-vous sûr de vouloir supprimer l\'avion '+ vm.jet.name + ' ?' )
+          .targetEvent(ev)
+          .ok('Oui')
+          .cancel('Non');
+
+        $mdDialog.show(confirm).then(function() {
+          jetsService.deleteJet(vm.jet.id).then(function (response) {
+            // TODO toastr
+            $location.path('/');
+          });
+        }, function() {});
+      };
     }
   }
 )();

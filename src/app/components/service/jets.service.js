@@ -11,6 +11,7 @@
     this.getJet = getJet;
     this.updateJet = updateJet;
     this.createJet = createJet;
+    this.deleteJet = deleteJet;
 
     function getJets() {
       return $http.get('https://us-central1-formation-71217.cloudfunctions.net/api/v1/jets');
@@ -26,6 +27,10 @@
 
     function createJet(jet) {
       return $http.post('https://us-central1-formation-71217.cloudfunctions.net/api/v1/jets/', jet);
+    }
+
+    function deleteJet(id) {
+      return $http.delete('https://us-central1-formation-71217.cloudfunctions.net/api/v1/jets/' + id);
     }
   }
 
