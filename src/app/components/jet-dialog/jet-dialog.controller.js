@@ -16,7 +16,6 @@
     vm.jet = jet;
 
     function save() {
-      debugger;
       $mdDialog.hide(vm.jet);
     }
 
