@@ -1,5 +1,22 @@
+<div style="display: flex; align-items: center;">
+  <div>
+    <span>FILTRES</span>
+  </div>
+  <div style="margin-left: 15px;">
+    <md-input-container style="margin-top: 36px;">
+      <label>Nom</label>
+      <input ng-model="plc.search.name">
+    </md-input-container>
+  </div>
+  <div style="margin-left: 15px;">
+    <md-input-container style="margin-top: 36px;">
+      <label>Constructeur</label>
+      <input ng-model="plc.search.maker">
+    </md-input-container>
+  </div>
+</div>
 <div class="techs">
-  <plane ng-repeat="jet in plc.jets" jet="jet"></plane>
+  <plane ng-repeat="jet in plc.jets | filter:plc.search" jet="jet"></plane>
 </div>
 <div>
   <md-button class="md-raised md-primary" ng-click="plc.createJet()">Ajouter</md-button>

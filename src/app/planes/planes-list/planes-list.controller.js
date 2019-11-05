@@ -9,6 +9,7 @@
     function PlanesListController(jetsService, $mdDialog, $document, $location, toastr) {
       var vm = this;
       vm.createJet = createJet;
+      vm.search = {};
 
       activate();
 
