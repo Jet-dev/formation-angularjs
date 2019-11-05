@@ -8,7 +8,7 @@
     </md-card-title-text>
   </md-card-title>
   <md-card-content>
-    <p>{{ pc.jet.description }}</p>
+    <p>{{ pc.jet.description | checkDescriptionLength }}</p>
   </md-card-content>
   <md-card-actions layout="row" layout-align="end center">
     <md-button ng-click="pc.goToDetail()">Action 1</md-button>
