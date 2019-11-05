@@ -1,0 +1,7 @@
+md-tooltip .md-content{
+  height: auto;
+  width: 400px;
+  max-width: 400px;
+  padding: 8px;
+  white-space: initial;
+}

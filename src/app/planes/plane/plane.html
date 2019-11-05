@@ -8,6 +8,7 @@
     </md-card-title-text>
   </md-card-title>
   <md-card-content>
+    <md-tooltip ng-if="pc.jet.description.length > 150"><p>{{ pc.jet.description }}</p></md-tooltip>
     <p>{{ pc.jet.description | checkDescriptionLength }}</p>
   </md-card-content>
   <md-card-actions layout="row" layout-align="end center">
