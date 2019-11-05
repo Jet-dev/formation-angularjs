@@ -6,7 +6,7 @@
       .controller('PlanesListController', PlanesListController);
 
     /** @ngInject */
-    function PlanesListController(jetsService, $mdDialog, $document, $location) {
+    function PlanesListController(jetsService, $mdDialog, $document, $location, toastr) {
       var vm = this;
       vm.createJet = createJet;
 
@@ -28,7 +28,7 @@
         })
           .then(function (jetToCreate) {
             jetsService.createJet(jetToCreate).then(function(response) {
-              // TODO toastr
+              toastr.success('Le jet ' + jetToCreate.name + ' a été ajouté !', 'Ajout');
               $location.path('/' + response.data.id);
             })}, function () {
           });

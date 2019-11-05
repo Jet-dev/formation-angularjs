@@ -6,7 +6,7 @@
       .controller('DetailController', DetailController);
 
     /** @ngInject */
-    function DetailController(jet, $mdDialog, $document, jetsService, $location) {
+    function DetailController(jet, $mdDialog, $document, jetsService, $location, toastr) {
       var vm = this;
 
       vm.openDialog = openDialog;
@@ -33,7 +33,7 @@
         })
           .then(function (jetUpdated) {
             jetsService.updateJet(jetUpdated).then(function(response) {
-              // TODO toastr
+              toastr.success('Le jet ' + jetUpdated.name + ' a été mis à jour !', 'MAJ');
             })}, function () {
           });
       }
@@ -48,7 +48,7 @@
 
         $mdDialog.show(confirm).then(function() {
           jetsService.deleteJet(vm.jet.id).then(function (response) {
-            // TODO toastr
+            toastr.success('Le jet ' + vm.jet.name + ' a été supprimé !', 'Suppression');
             $location.path('/');
           });
         }, function() {});
