@@ -52,6 +52,10 @@ html {
   padding: 0.2em 0;
 }
 
+md-content {
+  width: 100%;
+}
+
 md-toolbar.md-default-theme {
   background-color: black;
 }
@@ -74,7 +78,7 @@ section.jumbotron h1 {
   flex-flow: row wrap;
 }
 
-.techs md-card {
+.jets md-card {
   width: 30%;
 }
 

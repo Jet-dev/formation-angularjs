@@ -2,15 +2,15 @@
   'use strict';
 
   angular
-    .module('test')
+    .module('formation-ng')
     .config(routeConfig);
 
   function routeConfig($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        templateUrl: 'app/planes/planes.html',
+        controller: 'PlanesController',
+        controllerAs: 'pc'
       })
       .otherwise({
         redirectTo: '/'
