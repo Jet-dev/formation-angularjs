@@ -1,0 +1,18 @@
+<div class="techs jets">
+  <md-card ng-repeat="jet in plc.jets">
+    <img ng-src="{{jet.pictureUrl}}">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline" ng-bind="jet.name"></span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p>
+        {{ jet.description }}
+      </p>
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="end center">
+      <md-button> {{ 'jet.card.editButton' | translate }}</md-button>
+    </md-card-actions>
+  </md-card>
+</div>
